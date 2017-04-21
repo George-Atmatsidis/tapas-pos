@@ -18,8 +18,9 @@
 
 package com.peyrona.tapas;
 
-import java.awt.Graphics;
-import java.awt.Image;
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -36,8 +37,6 @@ import java.util.Locale;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
 
 /**
  * Constantes y algunos métodos estáticos para realizar operaciones frecuentes.
@@ -75,7 +74,14 @@ public final class Utils
         }
 
         // Inicializamos apropiadamente la moneda
-        int nDigits = Currency.getInstance( Locale.getDefault() ).getDefaultFractionDigits();
+        Locale locale = Locale.getDefault();
+        Currency currency;
+        try {
+            currency = Currency.getInstance(locale);
+        } catch (Exception e) {
+            currency = Currency.getInstance(Locale.US);
+        }
+        int nDigits = currency.getDefaultFractionDigits();
 
         Utils.nfNoSymbol.setMinimumFractionDigits( nDigits );
         Utils.nfNoSymbol.setMaximumFractionDigits( nDigits );

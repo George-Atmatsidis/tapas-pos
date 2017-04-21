@@ -231,7 +231,7 @@ public final class BillPanel extends JPanel
             // Con este filtro fabrico el icono de disabled y me ahorro la mitad de los iconos
             ImageHighlightFilter ihf = new ImageHighlightFilter( true, 64 );
 
-            ImageIcon icon  = new ImageIcon( getClass().getResource( "images/"+ sActionCommand +".png" ) );
+            ImageIcon icon  = new ImageIcon( getClass().getResource( "/com/peyrona/tapas/account/bill/images/"+ sActionCommand +".png" ) );
             Image     image = createImage( new FilteredImageSource( icon.getImage().getSource(), ihf ) );
             ImageIcon dicon = new ImageIcon( image );
 

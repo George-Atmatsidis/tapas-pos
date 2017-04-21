@@ -23,12 +23,13 @@ import com.peyrona.tapas.office.OfficePanel;
 import com.peyrona.tapas.persistence.Bill;
 import com.peyrona.tapas.persistence.Configuration;
 import com.peyrona.tapas.persistence.DataProvider;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
+
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.net.URL;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
@@ -172,7 +173,13 @@ public final class MainFrame extends JFrame implements ActionListener
     private MainFrame()
     {
         setTitle( "Tapas: TPV para bares - Ver. 1.0 (Licencia GPL)" );
-        setIconImage( new ImageIcon( getClass().getResource( "images/logo_small.png" ) ).getImage() );
+
+        URL imageURL = getClass().getResource( "/com/peyrona/tapas/mainFrame/images/logo_small.png" );
+        if (imageURL != null) {
+            Image imageIcon = new ImageIcon(imageURL).getImage();
+            setIconImage(imageIcon);
+        }
+
         setDefaultCloseOperation( WindowConstants.DO_NOTHING_ON_CLOSE );
         setPreferredSize( new Dimension( 1024, 768 ) );
 

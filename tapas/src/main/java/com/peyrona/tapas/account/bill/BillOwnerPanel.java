@@ -41,7 +41,7 @@ final class BillOwnerPanel extends JPanel implements ActionListener
                lblName.setFont( lblName.getFont().deriveFont( 18f ) );
         txtName = new JTextField( sName );
         txtName.setFont( txtName.getFont().deriveFont( 16f ) );
-        JButton btnKeyboard = new JButton( new ImageIcon( getClass().getResource( "images/keyboard.png") ) );
+        JButton btnKeyboard = new JButton( new ImageIcon( getClass().getResource( "/com/peyrona/tapas/mainFrame/images/keyboard.png") ) );
                 btnKeyboard.setMargin( new Insets( 2, 4, 2, 4 ) );
                 btnKeyboard.addActionListener( BillOwnerPanel.this );
 
