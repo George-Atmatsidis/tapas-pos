@@ -1,6 +1,6 @@
 # tapas-tpv
 
-Note: This project was originally started by [Francisco Morero Peyrona](https://gitgub.com/peyrona).
+Note: This project was originally started by [Francisco Morero Peyrona](https://github.com/peyrona).
 
 --------------------------------------
    SOBRE ESTE PROYECTO
