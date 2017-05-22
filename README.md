@@ -1,4 +1,4 @@
-# tapas-tpv
+# tapas-pos
 
 Note: This project was originally started by [Francisco Morero Peyrona](https://github.com/peyrona).
 
