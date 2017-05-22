@@ -12,6 +12,7 @@
     <bytecodeTargetLevel>
       <module name="tapas" target="1.5" />
       <module name="tapas-app" target="1.8" />
+      <module name="tapas-pos" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
