@@ -60,7 +60,7 @@ Algunas características son:
 
 * Aquél que encuentre un bug (sé que los hay), por favor que lo reporte
   utilizando la herramienta de la pág web del programa
-  (https://github.com/antoniovl/tapas-tpv/issues).
+  (https://github.com/antoniovl/tapas-pos/issues).
   Y si de paso me da la solución, se lo agradeceré aún más.
 
 * El programa (como todos) es muy mejorable, pero hasta aquí he llegado (aunque
